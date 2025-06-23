@@ -134,3 +134,12 @@ Instead of running Step 3 command again, run this instead
 * Replace `your-node-id` with the one acquired from nexus dashboard
 
 ---
+
+### Manage your Node screen:
+* To minimze the screen: `CTRL+A+D`
+
+* To return to screen: `screen -r nexus`
+
+* To kill screen: `screen -XS nexus quit`
+
+---
