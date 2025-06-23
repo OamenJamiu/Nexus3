@@ -75,28 +75,40 @@ ldd --version
 * It must be `2.39`, if not, continue the steps.
 
 2- Install dependencies:
-```
+```bash
 sudo apt update
+```
+```bash
 sudo apt install -y gawk bison gcc make wget tar
 ```
 
 3- Download GLIBC 2.39:
 ```
 wget -c https://ftp.gnu.org/gnu/glibc/glibc-2.39.tar.gz
+```
+```bash
 tar -zxvf glibc-2.39.tar.gz
+```
+```bash
 cd glibc-2.39
 ```
 
 4- Create a build directory:
 ```
 mkdir glibc-build
+```
+```bash
 cd glibc-build
 ```
 
 5- Build
 ```
 ../configure --prefix=/opt/glibc-2.39
+```
+```bash
 make -j$(nproc)
+```
+```bash
 sudo make install
 ```
 ```
